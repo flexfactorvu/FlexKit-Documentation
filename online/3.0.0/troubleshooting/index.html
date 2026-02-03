@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../img/favicon.ico">
+    <title>Troubleshooting &mdash; FlexKit Docs</title>
+    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Lato:400,700">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/tonsky/FiraCode@1.206/distr/fira_code.css">
+    <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.8.1/css/all.css">
+    <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.8.1/css/v4-shims.css">
+    <link rel="stylesheet" href="../css/theme.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+    <link rel="stylesheet" href="../stylesheets/extra.css">
+    <script src="//code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+    <script>
+        hljs.initHighlightingOnLoad();
+    </script> 
+</head>
+
+<body ontouchstart="">
+    <div id="container">
+        <aside>
+            <div class="home">
+                <div class="title">
+                    <button class="hamburger"></button>
+                    <a href=".." class="site-name"> FlexKit Docs</a>
+                </div>
+            </div>
+            <nav class="nav">
+                <ul class="root">
+                    <li class="toctree-l1"><a class="nav-item" href="..">Home</a></li>
+                    <li class="toctree-l1"><a class="nav-item" href="../quick-start/">Quick Start</a></li>
+                    <li class="toctree-l1"><button class="section nav-item">Extra</button>
+<ul class="subnav">
+    <li class="toctree-l2"><a class="nav-item" href="../panel-guide/">Panel Guide</a></li>
+    <li class="toctree-l2"><a class="nav-item" href="../terminology/">Terminology and Technical Details</a></li>
+    <li class="toctree-l2 current"><a class="nav-item current" href="./">Troubleshooting</a>
+<ul class="subnav">
+<li class="toctree-l3"><a class="nav-item toc" href="#customized-support">Customized Support</a></li>
+<li class="toctree-l3"><a class="nav-item toc" href="#design-paradigm">Design Paradigm</a></li>
+<li class="toctree-l3"><a class="nav-item toc" href="#limitations-and-known-bugs">Limitations and Known Bugs</a></li>
+<li class="toctree-l3"><a class="nav-item toc" href="#common-application-errors">Common Application Errors</a></li>
+<li class="toctree-l3"><a class="nav-item toc" href="#common-animation-errors">Common Animation Errors</a></li>
+<li class="toctree-l3"><a class="nav-item toc" href="#faqs">FAQs</a></li>
+</ul></li>
+    <li class="toctree-l2"><a class="nav-item" href="../external-links/">External Links</a></li>
+</ul></li>
+                    <li class="toctree-l1"><button class="section nav-item">Development</button>
+<ul class="subnav">
+    <li class="toctree-l2"><a class="nav-item" href="../patch-notes/">Patch Notes</a></li>
+    <li class="toctree-l2"><a class="nav-item" href="../road-map/">Road Map</a></li>
+</ul></li>
+                </ul>
+            </nav>
+            <div class="repo">
+    <div class="previous"><a href="../terminology/">&laquo; Previous</a></div>
+    <div class="next"><a href="../external-links/">Next &raquo;</a></div>
+</div>
+        </aside>
+        <div id="spacer"><button class="arrow"></button></div>
+        <main>
+            <div class="home-top">
+                <button class="hamburger"></button>
+                <a href=".." class="site-name"> FlexKit Docs</a>
+            </div>
+            <div id="main">
+                <nav class="breadcrumbs">
+<ul>
+    <li>Extra</li>
+</ul>
+</nav>
+                <div id="content"><h1 id="troubleshooting">Troubleshooting</h1>
+<p>Figure out why you're running into problems.</p>
+<hr />
+<p><br></p>
+<h2 id="customized-support">Customized Support</h2>
+<p>Use the ticket system on the Discord Server<br>Or voice your issue in flexkit-chat channels.</p>
+<ul>
+<li>
+<h3 id="server-invite"><a href="https://discord.gg/DBJASMe7aZ"><strong>SERVER INVITE</strong></a></h3>
+</li>
+</ul>
+<p><br></p>
+<hr />
+<h2 id="design-paradigm">Design Paradigm</h2>
+<hr />
+<ul>
+<li>
+<p>FlexKit is designed with "lazy-loading" for its data linking. This means that Blender data blocks and properties are not directly referenced by FlexKit. There is no instancing when linking data from Blender with FlexKit via Configuration. However, validating the data is done at certain key UI events such as when selecting an item from the Configuration list, or right before export. Any erroneous configurations will be flagged and highlighted in red. Details will appear in the ERROR Section. </p>
+</li>
+<li>
+<p>FlexKit includes built-in troubleshooting with suggested actions displayed with the error (click "More Info" in the ERROR Section). If applicable to the error, the UI buttons involved with the recommended actions are also highlighted for easy navigation.
+Details of the Export operations are logged to console (timestamped). Empty export results, where no animation is detected, will trigger a WARNING to display on the bottom of the Blender UI.</p>
+</li>
+</ul>
+<hr />
+<h4 id="flexkits-internal-workflow-is-as-follows">FlexKit's internal workflow is as follows:</h4>
+<ol>
+<li><code>Create Configuration</code> (<code>Add Target</code>) -&gt;</li>
+<li><code>Log Target (MESH or ARMATURE)</code> -&gt; </li>
+<li><code>Log Driver (optional)</code> -&gt; </li>
+<li><code>Scan Target for SUBTARGETS</code> and <code>log SUBTARGETS</code> -&gt; <code>(standby for user input)</code> -&gt; </li>
+<li>user may: <code>enable/disable subtargets</code>, <code>alter Export Options</code>, <code>create more configurations</code>, <code>proceed to work normally on their project</code>, <code>save and closer blender</code></li>
+<li>LOOP(<code>Validate that Target and Driver names exist in scene</code>, <code>validate Subtargets exist on Target</code>) at key UX/UI events</li>
+<li>FOR EXPORTING: <ul>
+<li><code>Log States (eg. framerate, start/end frame, auto-keyframe, etc..)</code> -&gt; </li>
+<li><code>Prepare to Export (use Export Options)</code> -&gt; </li>
+<li><code>Sample</code> -&gt; </li>
+<li><code>Restore States</code> -&gt; <code>Render to string</code> -&gt; <code>Output to file</code></li>
+</ul>
+</li>
+</ol>
+<p><br></p>
+<p>At any one of these steps something can go wrong. FlexKit should perform self-checks and validations during operation. Errors should display in the <code>ERROR Section</code> (see <a href="../panel-guide/"><strong>panel guide</strong></a>). Clicking <code>More Info</code> will bring up the built-in troubleshooting feature.</p>
+<p>During export, FlexKit should output details to console. Display your Blender console to possibly get more insight into your unexpected result.</p>
+<p>If your animation doesn't look right or if any python or Blender built-in error message shows up during operation of the FlexKit, please check the <a href="#common-application-errors"><strong>common application errors</strong></a> and <a href="#common-animation-errors"><strong>common animation errors</strong></a>.</p>
+<p><br></p>
+<h4 id="some-examples"><strong>Some Examples:</strong></h4>
+<ul>
+<li>
+<p>E.g. If you change the name of a mesh and then try to export it, on validation FlexKit will inform you that the mesh no longer exists. The add and edit buttons will be highlighted. </p>
+</li>
+<li>
+<p>E.g. If you change the name of a bone in an armature, then on validation, you will be informed that the configured bone is missing, "Filter Bones" will be highlighted and "Refresh Bones" in the popup will be highlighted. </p>
+</li>
+<li>
+<p>E.g. Your configured target does not animate and your export options do not pad, or include Temporal+ enabled but the target never leaves rest position. The resulting XML file is blank. The exporter does not output a file and triggers a WARNING message that says that the file was not outputted.</p>
+</li>
+</ul>
+<p><br></p>
+<hr />
+<h2 id="limitations-and-known-bugs">Limitations and Known Bugs</h2>
+<ul>
+<li>Exporting files relative to the Blender project is only possible if the file is saved. Saving the file is mandatory for the operation of FlexKit.</li>
+<li>FlexKit does not support accurate animation of any "root" bones. Try to never pose or animate the "root" bone (top-most level parent bone) of any armature when using FlexKit. This is because location data for animations is done relative to the parent. Since root bones don't have any parents, their animation data does not coordinate relatively to anything besides its attachment point to any external skeleton. The attachment point coordinate systems are unpredictable in IMVU, so animating the root bone will give very unpredictable, and often frustrating, results.</li>
+<li>If you export an avatar animation as FBX using the IMVU STUDIO TOOLKIT for Blender, the head mesh (named "Morph") will alter one of its shape-keys. FlexKit will throw an error during validation and require a refresh of shape-key subtargets, resulting in removing the old (unimportant) shape-key and adding a new (unimportant) shape-key. You may disable the new shapekey to keep your XML optimized. This new shapekey does not actually control any morphs.</li>
+<li>In post-processing optimizations: designed to limit unneccessary characters like '0' in values such as 1e-03, reporting them to 1e-3 instead. However sometimes a 'rogue zero' slips in. This bug does not affect accuracy. It is currently being investigated as its difficult to reproduce. </li>
+<li>Sometimes, the first frame of the animation will "glitch" into an awkward position, and then resume normal playback. It lasts only one frame. This is because some pole targets for IK-systems don't resolve properly when evaluating depsgraphs for the first frame. Put your frame marker at the start of the animation before export, or export twice in a row. This bug is not present with quick exporting. This bug is being actively investigated. </li>
+</ul>
+<p><br></p>
+<hr />
+<h2 id="common-application-errors">Common Application Errors</h2>
+<ol>
+<li>
+<p>File not saved | <strong>SOLUTION:</strong> Save your project somewhere</p>
+</li>
+<li>
+<p>Changing the name of, or removing, the Target/Driver | <strong>SOLUTION:</strong> Go into edit and reselect the Target OR remove affected Configuration</p>
+</li>
+<li>
+<p>Changing the name of, or removing, or adding Subtargets | <strong>SOLUTION:</strong> Refresh Subtargets, FlexKit repopulates the list automatically</p>
+</li>
+<li>
+<p>If attempting to Auto-Detect an IMVU Animation Tool template, a WARNING may appear saying that the template was not detected. This can occur if the object names of "Anim", "Morph", or "Control_Armature" are changed or don't appear in the scene.</p>
+</li>
+</ol>
+<p><br></p>
+<ul>
+<li>For High filesize or long export time | <strong>SOLUTION:</strong> Lower <code>resolution</code>, disable <code>Human Readability</code>, shorten animation duration.</li>
+</ul>
+<p><br></p>
+<p>FlexKit should <strong>NOT</strong> throw any python built-in errors during operation. If you encounter any such error and suspect that it is because of FlexKit, please <a href="../#contact"><strong>contact me</strong></a>. Your input will be valuable.</p>
+<p><br></p>
+<hr />
+<h2 id="common-animation-errors">Common Animation Errors</h2>
+<ol>
+<li>
+<p><strong>Jittery, Unsmooth, or Mildly Inaccurate Animations</strong> - Your animation doesn't look smooth; jitters, moves at a weird speed, or has mild inconsistencies (mildly inaccurate hand/arm placements for example).</p>
+<ul>
+<li><strong>Solutions</strong> : <ol>
+<li>Try increasing <code>Resolution</code> (in the <code>Export Options</code> panel) to see if it improves results.</li>
+<li>Ensure that your <code>Frame Rate</code> is set to 30 fps.</li>
+<li>Change, enable or disable settings in <code>Export Options</code> -&gt; <code>Resolution Settings</code> -&gt; <code>Post-Processing Styles</code> (see <a href="../panel-guide/"><strong>panel guide</strong></a> or search "post-processing style" in the documentation for more info on this setting)</li>
+</ol>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Messed-up Avatar/Mesh</strong> - Your animation causes heavy distortion of your avatar or mesh, or doesn't line up properly.</p>
+<ul>
+<li><strong>Solutions</strong> :<ol>
+<li>Ensure that <code>Accessory Export</code> option matches the desired animation type. If you are exporting from the accessory template, or deriving from an accessory-type parent (pets included), then this should be enabled. Otherwise keep it disabled. <ul>
+<li><strong>NOTE</strong>: pose-packs are CLOTHING derived, and avatars are AVATAR derived so keep this disabled for avatar pose animations</li>
+</ul>
+</li>
+<li>Ensure your armature only has 1 root bone (bone with no parent), this is especially important for custom armatures, like with accessories.</li>
+<li>Ensure the root bone in your armature is disabled in <code>Details</code> -&gt; <code>Filter Subsamples (Bones/Shapekeys)</code>.</li>
+</ol>
+</li>
+</ul>
+</li>
+</ol>
+<p><br></p>
+<hr />
+<p><br></p>
+<p>Do you need help on something that isn't mentioned here? Do you want to report a bug? You may directly <a href="../#contact"><strong>contact me</strong></a>.</p>
+<p><br></p>
+<hr />
+<h2 id="faqs">FAQs</h2>
+<ul>
+<li>FAQs will show here as they accumulate.
+<br><br><br></li>
+</ul></div>
+                <footer>
+    <div class="footer-buttons">
+        <div class="previous"><a href="../terminology/" title="Terminology and Technical Details"><span>Previous</span></a></div>
+        <div class="next"><a href="../external-links/" title="External Links"><span>Next</span></a></div>
+    </div>
+    <div class="footer-note">
+        <p>
+            Built with <a href="http://www.mkdocs.org">MkDocs</a> using
+            <a href="https://github.com/daizutabi/mkdocs-ivory">Ivory theme</a>.
+        </p>
+    </div>
+</footer>
+            </div>
+        </main>
+    </div>
+    <script>var base_url = '..';</script>
+    <script src="../js/theme.js"></script>
+</body>
+
+</html>

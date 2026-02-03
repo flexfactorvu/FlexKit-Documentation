@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../img/favicon.ico">
+    <title>Terminology and Technical Details &mdash; FlexKit Docs</title>
+    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Lato:400,700">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/tonsky/FiraCode@1.206/distr/fira_code.css">
+    <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.8.1/css/all.css">
+    <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.8.1/css/v4-shims.css">
+    <link rel="stylesheet" href="../css/theme.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+    <link rel="stylesheet" href="../stylesheets/extra.css">
+    <script src="//code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+    <script>
+        hljs.initHighlightingOnLoad();
+    </script> 
+</head>
+
+<body ontouchstart="">
+    <div id="container">
+        <aside>
+            <div class="home">
+                <div class="title">
+                    <button class="hamburger"></button>
+                    <a href=".." class="site-name"> FlexKit Docs</a>
+                </div>
+            </div>
+            <nav class="nav">
+                <ul class="root">
+                    <li class="toctree-l1"><a class="nav-item" href="..">Home</a></li>
+                    <li class="toctree-l1"><a class="nav-item" href="../quick-start/">Quick Start</a></li>
+                    <li class="toctree-l1"><button class="section nav-item">Extra</button>
+<ul class="subnav">
+    <li class="toctree-l2"><a class="nav-item" href="../panel-guide/">Panel Guide</a></li>
+    <li class="toctree-l2 current"><a class="nav-item current" href="./">Terminology and Technical Details</a>
+<ul class="subnav">
+<li class="toctree-l3"><a class="nav-item toc" href="#accessory-export">Accessory Export</a></li>
+<li class="toctree-l3"><a class="nav-item toc" href="#configuration">Configuration</a></li>
+<li class="toctree-l3"><a class="nav-item toc" href="#driver-object">Driver Object</a></li>
+<li class="toctree-l3"><a class="nav-item toc" href="#export">Export</a></li>
+<li class="toctree-l3"><a class="nav-item toc" href="#human-readable">Human Readable</a></li>
+<li class="toctree-l3"><a class="nav-item toc" href="#overwriteincrement">Overwrite/Increment</a></li>
+<li class="toctree-l3"><a class="nav-item toc" href="#pad-firstpad-last">Pad-First/Pad-Last</a></li>
+<li class="toctree-l3"><a class="nav-item toc" href="#quick-export-current-pose">Quick-Export Current Pose</a></li>
+<li class="toctree-l3"><a class="nav-item toc" href="#resolution">Resolution</a></li>
+<li class="toctree-l3"><a class="nav-item toc" href="#subsamples">Subsamples</a></li>
+<li class="toctree-l3"><a class="nav-item toc" href="#target-object">Target Object</a></li>
+<li class="toctree-l3"><a class="nav-item toc" href="#temporal">Temporal+</a></li>
+</ul></li>
+    <li class="toctree-l2"><a class="nav-item" href="../troubleshooting/">Troubleshooting</a></li>
+    <li class="toctree-l2"><a class="nav-item" href="../external-links/">External Links</a></li>
+</ul></li>
+                    <li class="toctree-l1"><button class="section nav-item">Development</button>
+<ul class="subnav">
+    <li class="toctree-l2"><a class="nav-item" href="../patch-notes/">Patch Notes</a></li>
+    <li class="toctree-l2"><a class="nav-item" href="../road-map/">Road Map</a></li>
+</ul></li>
+                </ul>
+            </nav>
+            <div class="repo">
+    <div class="previous"><a href="../panel-guide/">&laquo; Previous</a></div>
+    <div class="next"><a href="../troubleshooting/">Next &raquo;</a></div>
+</div>
+        </aside>
+        <div id="spacer"><button class="arrow"></button></div>
+        <main>
+            <div class="home-top">
+                <button class="hamburger"></button>
+                <a href=".." class="site-name"> FlexKit Docs</a>
+            </div>
+            <div id="main">
+                <nav class="breadcrumbs">
+<ul>
+    <li>Extra</li>
+</ul>
+</nav>
+                <div id="content"><h1 id="terminology-and-technical-details">Terminology and Technical Details</h1>
+<p>Below are some terms that have specific context with regards to operation of FlexKit.</p>
+<hr />
+<p><br>
+<br></p>
+<hr />
+<h2 id="accessory-export">Accessory Export</h2>
+<ul>
+<li>Changes certain internal calculations of IMVU Bone-IDs and rotationary values to match the format specified for accessory-derived products.</li>
+</ul>
+<p><br></p>
+<hr />
+<h2 id="configuration">Configuration</h2>
+<ul>
+<li>A bundled set of data used to execute sampling and exporting under user specified conditions <ul>
+<li><code>Target Object</code> (MESH or Armature)</li>
+<li><code>Subsample</code> (bone or shape-key)</li>
+<li><code>Driver Object</code> (optional)</li>
+<li>and certain Export Options (<em>File Name</em>, <em>Location</em>, <code>Overwrite/Increment</code>, <code>Pad-First/Pad-Last</code>, <code>Temporal+</code>, <code>Accessory Export</code>)</li>
+</ul>
+</li>
+</ul>
+<p><br></p>
+<hr />
+<h2 id="driver-object">Driver Object</h2>
+<ul>
+<li>Object that, when animated, drives the movement of the target object. FlexKit only uses this driving object to calculate rest pose in <em>Temporal+</em> mode (see definition below). </li>
+<li>Supports ANY object as driver, although armature-type objects work best. Armature-Type drivers will be articulated back to rest pose and reset world co-ordinates. All other object type drivers will only have world co-ordinates reset based on individual origins. This is restored afterwards. The user does not see this front-end. </li>
+<li>Armature-type driver objects with bone collections can specify which bone-collections are used for rest-pose calculations from within the visibility toggles in <code>Properties Panel</code> -&gt; <code>Data</code> -&gt; <code>Bone Collections</code>. If collections are nested, parent-collection visibility settings will recursively overwrite all child-collection visibility settings.</li>
+</ul>
+<p><br></p>
+<hr />
+<h2 id="export">Export</h2>
+<ul>
+<li>The core operation of FlexKit. Combines user specified <em>Configuration</em> with native Blender settings and information to yield XML (XAF/XPF) files. </li>
+<li>For a selected <em>Target Object</em>, in a specified frame range set in Blender: at each frame, for each enabled <em>Subsample</em>, it will fetch the appropriate value(s) (location/rotation for bones or weights for shape-keys). <ul>
+<li>The algorithm will compare this value to the value in the previous and next frames to see if any change has been detected based on a certain threshold set by the <em>Resolution</em>. </li>
+<li>A positive result will include the sample in the final XML export.  </li>
+</ul>
+</li>
+</ul>
+<p><br></p>
+<hr />
+<h2 id="human-readable">Human Readable</h2>
+<ul>
+<li>A <em>Resolution</em> option. </li>
+<li>Refers to the formatting of XML files to include whitespaces/tabs/indents/spaces etc to make it easier for a human to read. </li>
+<li>Can be toggled on or off. <ul>
+<li>
+<h5 id="please-note-that-file-sizes-are-vastly-reduced-when-human-readability-is-disabled-which-is-the-most-optimal-result">Please note that file sizes are vastly reduced when Human Readability is disabled, which is the most optimal result.</h5>
+</li>
+</ul>
+</li>
+</ul>
+<p><br></p>
+<hr />
+<h2 id="overwriteincrement">Overwrite/Increment</h2>
+<ul>
+<li>Specifies whether the user wants subsequent exports to overwrite to the same file if a file with the same file name already exists, or increment by -XXX suffix (ie -001, -002, etc) at the end of the file name on export to prevent loss of data in old exports. </li>
+<li>Overwrite is recommended for a more seamless experience with IMVU STUDIO and IMVU CLASSIC.</li>
+</ul>
+<p><br></p>
+<hr />
+<h2 id="pad-firstpad-last">Pad-First/Pad-Last</h2>
+<ul>
+<li>Refers to the deliberate inclusion of samples in the start/end frames of the animation sequence. </li>
+<li>With <em>Temporal+</em>, only enabled subsamples that have been detected as animated will have their start/end samples deliberately included as specified, and static subsamples will be omitted. </li>
+<li>Without <em>Temporal+</em> all enabled subsamples are first/last padded as specified.</li>
+</ul>
+<p><br></p>
+<hr />
+<h2 id="quick-export-current-pose">Quick-Export Current Pose</h2>
+<ul>
+<li>A secondary, but equally powerful operation similar to <em>Export</em>. </li>
+<li>For a given <em>Target Object</em>, for each enabled <em>Subsample</em>, at the CURRENT FRAME, it will fetch the appropriate value(s) (location/rotation for bones or weights for shape-keys). This allows for extracting multiple single poses from an animation sequence. </li>
+<li>All enabled subsamples are included in the final XML output, which is suffixed with an -fXXX format, XXX being the frame number. </li>
+<li>Note that this respects <em>Overwrite/Incremement</em> settings per frame.</li>
+</ul>
+<p><br></p>
+<hr />
+<h2 id="resolution">Resolution</h2>
+<ul>
+<li>A combined metric merging the <em>temporal threshold</em> and <em>reporting precision</em> that is used when sampling. <ul>
+<li><strong>Temporal threshold</strong> is calculated as a float of 10^(-Resolution)</li>
+<li><strong>Reporting precision</strong> is calculated as a floor-rounded integer of (Resolution + 1) decimal places. </li>
+</ul>
+</li>
+<li>Changes in subsample values accross frames that exceed the temporal threshold will register as animated and yield a result that is reported to the specified reporting precision (decimal place), otherwise the subsample will be omitted for the given frame. </li>
+<li>Higher resolution -&gt; Lower temporal threshold (likelihood of more yielded samples) -&gt; Higher file-size. </li>
+<li>Decimal places, selection of post-processing algorithms, and <em>Human Readability</em> of final files can be overriden in the <strong>Additional Resolution Settings</strong> popover (See <strong>Panel Reference</strong>).</li>
+<li>GLOBAL SETTING (applied to all <em>Configurations</em>). </li>
+</ul>
+<p><br></p>
+<hr />
+<h2 id="subsamples">Subsamples</h2>
+<h5 id="also-called-subtargets">(also called <code>Subtargets</code>)</h5>
+<ul>
+<li>Refers to the individual data source that yields a single sample. </li>
+<li><code>ARMATURE</code> targets have <code>BONES</code> as subsamples, yielding a location/rotation pair sample. </li>
+<li><code>MESH</code> targets have <code>SHAPE-KEYS</code> as subsamples, yielding a single value weight sample. </li>
+<li>Individual subsamples can be toggled "on/off" in the <strong>Filter Subsamples</strong> pop-up, to specify whether to include them in sampling/exporting or not.</li>
+</ul>
+<p><br></p>
+<hr />
+<h2 id="target-object">Target Object</h2>
+<ul>
+<li>MESH or ARMATURE type object in blender. MESH type must have shape-keys.</li>
+</ul>
+<p><br></p>
+<hr />
+<h2 id="temporal">Temporal+</h2>
+<ul>
+<li>A very specific mode designed to tighten the core temporal detection algorithm. </li>
+<li>Performs a rest-pose comparison at the first frame of the sequence as well as keeps track of subsamples that registered movement within the sequence. The rest-pose is relative to the driver object (if present) otherwise the target object's world and pose-mode rest position is used instead. </li>
+<li>Subsamples that registered movement will be included in Pad-First/Pad-Last settings. </li>
+<li>Recommended for detailed single-animation projects (furniture, avatar poses). <em>Not</em> recommended for pose-packs or "replacing" animations because different animation sequences will have different set of bones that register as animated: if trying to replace animations with triggers in VU, missing bone data will not be overridden and will remain moving in the old animation.
+<br><br><br></li>
+</ul></div>
+                <footer>
+    <div class="footer-buttons">
+        <div class="previous"><a href="../panel-guide/" title="Panel Guide"><span>Previous</span></a></div>
+        <div class="next"><a href="../troubleshooting/" title="Troubleshooting"><span>Next</span></a></div>
+    </div>
+    <div class="footer-note">
+        <p>
+            Built with <a href="http://www.mkdocs.org">MkDocs</a> using
+            <a href="https://github.com/daizutabi/mkdocs-ivory">Ivory theme</a>.
+        </p>
+    </div>
+</footer>
+            </div>
+        </main>
+    </div>
+    <script>var base_url = '..';</script>
+    <script src="../js/theme.js"></script>
+</body>
+
+</html>
