@@ -6,13 +6,13 @@
 <br>
 
 ## Useful Links
-* [**Install/Uninstall/Update**](/#installation-and-use)
-+ [**Panel Guide**](/panel-guide/)
-+ [**Terminology and Technical Details**](/terminology/)
-+ [**Patch Notes**](/patch-notes/)
-+ [Troubleshooting](/troubleshooting/)
-+ [Extra Resources](/external-links/)
-+ [Site Navigation](/#navigation)
+* [**Install/Uninstall/Update**](index.md#installation-and-use)
++ [**Panel Guide**](panel-guide.md)
++ [**Terminology and Technical Details**](terminology.md)
++ [**Patch Notes**](patch-notes.md)
++ [Troubleshooting](troubleshooting.md)
++ [Extra Resources](external-links.md)
++ [Site Navigation](index.md#navigation)
 
 
 <br>
@@ -26,22 +26,22 @@
     <tr>
         <td>
             </a>
-            <a href="/images/auto-detect.jpg" target="_blank">
-            <img src="/images/auto-detect.jpg" style="width: 128px;" />
+            <a href="../images/auto-detect.jpg" target="_blank">
+            <img src="../images/auto-detect.jpg" style="width: 128px;" />
             </a>
         </td>
         <td></td>
         <td>
             </a>
-            <a href="/images/quickexportanim.jpg" target="_blank">
-            <img src="/images/quickexportanim.jpg" style="width: 128px;" />
+            <a href="../images/quickexportanim.jpg" target="_blank">
+            <img src="../images/quickexportanim.jpg" style="width: 128px;" />
             </a>
         </td>
         <td></td>
         <td>
             </a>
-            <a href="/images/quickexportmorph.jpg" target="_blank">
-            <img src="/images/quickexportmorph.jpg" style="width: 128px;" />
+            <a href="../images/quickexportmorph.jpg" target="_blank">
+            <img src="../images/quickexportmorph.jpg" style="width: 128px;" />
             </a>
         </td>
     </tr>
@@ -84,7 +84,7 @@
 + Error: **SVEx00**: `File Not Saved`
 + Warning: `NO IMVU TEMPLATE CONFIGURATIONS FOUND`
 + Warning: `File Failed Export`
-+ [**Troubleshoot**](/troubleshooting/#common-application-errors) for possible resolutions.
++ [**Troubleshoot**](troubleshooting.md#common-application-errors) for possible resolutions.
 
 <br>
 <br>
@@ -97,29 +97,29 @@
     <tr>
         <td>
             </a>
-            <a href="/images/framesettings.jpg" target="_blank">
-            <img src="/images/framesettings.jpg" style="width: 128px;" />
+            <a href="../images/framesettings.jpg" target="_blank">
+            <img src="../images/framesettings.jpg" style="width: 128px;" />
             </a>
         </td>
         <td></td>
         <td>
             </a>
-            <a href="/images/auto-detect.jpg" target="_blank">
-            <img src="/images/auto-detect.jpg" style="width: 128px;" />
+            <a href="../images/auto-detect.jpg" target="_blank">
+            <img src="../images/auto-detect.jpg" style="width: 128px;" />
             </a>
         </td>
         <td></td>
         <td>
             </a>
-            <a href="/images/exportanim.jpg" target="_blank">
-            <img src="/images/exportanim.jpg" style="width: 128px;" />
+            <a href="../images/exportanim.jpg" target="_blank">
+            <img src="../images/exportanim.jpg" style="width: 128px;" />
             </a>
         </td>
         <td></td>
         <td>
             </a>
-            <a href="/images/exportmorph.jpg" target="_blank">
-            <img src="/images/exportmorph.jpg" style="width: 128px;" />
+            <a href="../images/exportmorph.jpg" target="_blank">
+            <img src="../images/exportmorph.jpg" style="width: 128px;" />
             </a>
         </td>
     </tr>
@@ -166,7 +166,7 @@
 + Error: **SVEx00**: `File Not Saved`
 + Warning: `NO IMVU TEMPLATE CONFIGURATIONS FOUND`
 + Warning: `File Failed Export`
-+ [**Troubleshoot**](/troubleshooting/#common-application-errors) for possible resolutions.
++ [**Troubleshoot**](troubleshooting.md#common-application-errors) for possible resolutions.
 
 <br>
 <br>
@@ -179,29 +179,29 @@
     <tr>
         <td>
             </a>
-            <a href="/images/add-config.jpg" target="_blank">
-            <img src="/images/add-config.jpg" style="width: 128px;" />
+            <a href="../images/add-config.jpg" target="_blank">
+            <img src="../images/add-config.jpg" style="width: 128px;" />
             </a>
         </td>
         <td></td>
         <td>
             </a>
-            <a href="/images/add-config2.jpg" target="_blank">
-            <img src="/images/add-config2.jpg" style="width: 256px;" />
+            <a href="../images/add-config2.jpg" target="_blank">
+            <img src="../images/add-config2.jpg" style="width: 256px;" />
             </a>
         </td>
         <td></td>
         <td>
             </a>
-            <a href="/images/enableaccessory.jpg" target="_blank">
-            <img src="/images/enableaccessory.jpg" style="width: 128px;" />
+            <a href="../images/enableaccessory.jpg" target="_blank">
+            <img src="../images/enableaccessory.jpg" style="width: 128px;" />
             </a>
         </td>
         <td></td>
         <td>
             </a>
-            <a href="/images/accessory-export1.jpg" target="_blank">
-            <img src="/images/accessory-export1.jpg" style="width: 128px;" />
+            <a href="../images/accessory-export1.jpg" target="_blank">
+            <img src="../images/accessory-export1.jpg" style="width: 128px;" />
             </a>
         </td>
     </tr>
@@ -229,7 +229,7 @@
 + **FOR BEST RESULTS in ANIMATIONS (non-static poses)**:
     - Double check FPS is set to 30 in: `Blender Properties Panel` -> `Output` -> `Frame Rate`
     - Ensure `Frame Range` starts and ends exactly where you want the animation to start and end
-    - (same as [**animated avatar**](/quick-start/#animated-avatar-export) prerequisite)
+    - (same as [**animated avatar**](#animated-avatar-export) prerequisite)
 
 <br>
 
@@ -257,7 +257,7 @@
 + Error: **SVEx00**: `File Not Saved`
 + Warning: `Mesh has no shapekeys`
 + Warning: `File Failed Export`
-+ [**Troubleshoot**](/troubleshooting/#common-application-errors) for possible resolutions.
++ [**Troubleshoot**](troubleshooting.md#common-application-errors) for possible resolutions.
 
 <br>
 <br>
@@ -280,15 +280,15 @@
         <tr>
             <td>
                 </a>
-                <a href="/images/imvu-import.jpg" target="_blank">
-                <img src="/images/imvu-import.jpg" style="width: 128px;" />
+                <a href="../images/imvu-import.jpg" target="_blank">
+                <img src="../images/imvu-import.jpg" style="width: 128px;" />
                 </a>
             </td>
             <td></td>
             <td>
                 </a>
-                <a href="/images/imvu-update.jpg" target="_blank">
-                <img src="/images/imvu-update.jpg" style="width: 128px;" />
+                <a href="../images/imvu-update.jpg" target="_blank">
+                <img src="../images/imvu-update.jpg" style="width: 128px;" />
                 </a>
             </td>
         </tr>
@@ -309,26 +309,26 @@
         <tr>
             <td>
                 </a>
-                <a href="/images/showprojectclassic.jpg" target="_blank">
-                <img src="/images/showprojectclassic.jpg" style="width: 256px;" />
+                <a href="../images/showprojectclassic.jpg" target="_blank">
+                <img src="../images/showprojectclassic.jpg" style="width: 256px;" />
                 </a><br>
                 </a>
-                <a href="/images/copyfileover.jpg" target="_blank">
-                <img src="/images/copyfileover.jpg" style="width: 256px;" />
+                <a href="../images/copyfileover.jpg" target="_blank">
+                <img src="../images/copyfileover.jpg" style="width: 256px;" />
                 </a>
             </td>
             <td></td>
             <td>
                 </a>
-                <a href="/images/changedirectory.jpg" target="_blank">
-                <img src="/images/changedirectory.jpg" style="width: 128px;" />
+                <a href="../images/changedirectory.jpg" target="_blank">
+                <img src="../images/changedirectory.jpg" style="width: 128px;" />
                 </a>
             </td>
             <td></td>
             <td>
                 </a>
-                <a href="/images/copyaddress.jpg" target="_blank">
-                <img src="/images/copyaddress.jpg" style="width: 256px;" />
+                <a href="../images/copyaddress.jpg" target="_blank">
+                <img src="../images/copyaddress.jpg" style="width: 256px;" />
                 </a>
             </td>
         </tr>

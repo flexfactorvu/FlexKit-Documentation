@@ -39,11 +39,11 @@ Details of the Export operations are logged to console (timestamped). Empty expo
 
 <br>
 
-At any one of these steps something can go wrong. FlexKit should perform self-checks and validations during operation. Errors should display in the `ERROR Section` (see [**panel guide**](/panel-guide/)). Clicking `More Info` will bring up the built-in troubleshooting feature.
+At any one of these steps something can go wrong. FlexKit should perform self-checks and validations during operation. Errors should display in the `ERROR Section` (see [**panel guide**](panel-guide.md)). Clicking `More Info` will bring up the built-in troubleshooting feature.
 
 During export, FlexKit should output details to console. Display your Blender console to possibly get more insight into your unexpected result.
 
-If your animation doesn't look right or if any python or Blender built-in error message shows up during operation of the FlexKit, please check the [**common application errors**](/troubleshooting/#common-application-errors) and [**common animation errors**](/troubleshooting/#common-animation-errors).
+If your animation doesn't look right or if any python or Blender built-in error message shows up during operation of the FlexKit, please check the [**common application errors**](#common-application-errors) and [**common animation errors**](#common-animation-errors).
 
 <br>
 
@@ -86,7 +86,7 @@ If your animation doesn't look right or if any python or Blender built-in error 
 
 <br>
 
-FlexKit should **NOT** throw any python built-in errors during operation. If you encounter any such error and suspect that it is because of FlexKit, please [**contact me**](/#contact). Your input will be valuable.
+FlexKit should **NOT** throw any python built-in errors during operation. If you encounter any such error and suspect that it is because of FlexKit, please [**contact me**](index.md#contact). Your input will be valuable.
 
 <br>
 
@@ -98,7 +98,7 @@ FlexKit should **NOT** throw any python built-in errors during operation. If you
     - **Solutions** : 
         1. Try increasing `Resolution` (in the `Export Options` panel) to see if it improves results.
         2. Ensure that your `Frame Rate` is set to 30 fps.
-        3. Change, enable or disable settings in `Export Options` -> `Resolution Settings` -> `Post-Processing Styles` (see [**panel guide**](/panel-guide/) or search "post-processing style" in the documentation for more info on this setting)
+        3. Change, enable or disable settings in `Export Options` -> `Resolution Settings` -> `Post-Processing Styles` (see [**panel guide**](panel-guide.md) or search "post-processing style" in the documentation for more info on this setting)
 
 2. **Messed-up Avatar/Mesh** - Your animation causes heavy distortion of your avatar or mesh, or doesn't line up properly.
     - **Solutions** :
@@ -113,7 +113,7 @@ FlexKit should **NOT** throw any python built-in errors during operation. If you
 
 <br>
 
-Do you need help on something that isn't mentioned here? Do you want to report a bug? You may directly [**contact me**](/#contact).
+Do you need help on something that isn't mentioned here? Do you want to report a bug? You may directly [**contact me**](index.md#contact).
 
 <br>
 - - -

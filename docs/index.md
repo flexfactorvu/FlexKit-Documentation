@@ -16,43 +16,43 @@
 
 <br>
 
-- [**OVERVIEW**](/#overview)
+- [**OVERVIEW**](index.md#overview)
 
 <br>
 
-- [**PATCH NOTES**](/patch-notes/)
-- [**ROAD MAP**](/road-map/)
+- [**PATCH NOTES**](patch-notes.md)
+- [**ROAD MAP**](road-map.md)
 
 <br>
 
-- [**INSTALLATION and use**](/#installation-and-use)
-- [**CONTACT**](/#contact)
+- [**INSTALLATION and use**](index.md#installation-and-use)
+- [**CONTACT**](index.md#contact)
 
 <br>
 
-- [**QUICK START**](/quick-start/)
-    - [**Static Avatar Pose**](/quick-start/#static-avatar-pose-quick-export)
-    - [**Animated Avatar Pose**](/quick-start/#animated-avatar-export)
-    - [**IMVU Accessories**](/quick-start/#imvu-accessories-custom-armature)
-    - [**Importing into IMVU**](/quick-start/#importing-into-imvu)
+- [**QUICK START**](quick-start.md)
+    - [**Static Avatar Pose**](quick-start.md#static-avatar-pose-quick-export)
+    - [**Animated Avatar Pose**](quick-start.md#animated-avatar-export)
+    - [**IMVU Accessories**](quick-start.md#imvu-accessories-custom-armature)
+    - [**Importing into IMVU**](quick-start.md#importing-into-imvu)
 
-- [**PANEL GUIDE**](/panel-guide/)
-    - [**Configuration Section**](/panel-guide/#1-configuration)
-    - [**Details Section**](/panel-guide/#21-details)
-    - [**Export**](/panel-guide/#31-export)
-    - [**Export Options**](/panel-guide/#33-export-options)
+- [**PANEL GUIDE**](panel-guide.md)
+    - [**Configuration Section**](panel-guide.md#1-configuration)
+    - [**Details Section**](panel-guide.md#21-details)
+    - [**Export**](panel-guide.md#31-export)
+    - [**Export Options**](panel-guide.md#33-export-options)
 
-- [**TERMINOLOGY AND TECHNICAL DETAILS**](/terminology/)
+- [**TERMINOLOGY AND TECHNICAL DETAILS**](terminology.md)
 
-- [**TROUBLESHOOTING**](/troubleshooting/)
-    - [**Limitations and Known Bugs**](/troubleshooting/#limitations-and-known-bugs)
-    - [**Common Application Errors**](/troubleshooting/#common-application-errors)
-    - [**Common Animation Errors**](/troubleshooting/#common-animation-errors)
+- [**TROUBLESHOOTING**](troubleshooting.md)
+    - [**Limitations and Known Bugs**](troubleshooting.md#limitations-and-known-bugs)
+    - [**Common Application Errors**](troubleshooting.md#common-application-errors)
+    - [**Common Animation Errors**](troubleshooting.md#common-animation-errors)
     - **FAQs**(under construction)
 
 <br>
 
-- [**EXTERNAL LINKS**](/external-links/)
+- [**EXTERNAL LINKS**](external-links.md)
 
 <br>
 
@@ -72,11 +72,11 @@ FlexKit is designed as an extension (not an add-on). Although not recommended, i
 2. `Arrow at top right` -> `Install From Disk`
 3. `Locate FlexKit` (zip file | **DO NOT UNZIP**) -> `click and install` -> make sure its enabled after
 <br><br>
-<a href="/images/install1.jpg" target="_blank">
-<img src="/images/install1.jpg" style="width: 256px;" />
+<a href="images/install1.jpg" target="_blank">
+<img src="images/install1.jpg" style="width: 256px;" />
 </a>
-<a href="/images/install2.jpg" target="_blank">
-<img src="/images/install2.jpg" style="width: 256px;" />
+<a href="images/install2.jpg" target="_blank">
+<img src="images/install2.jpg" style="width: 256px;" />
 </a>
 
 
@@ -85,11 +85,11 @@ FlexKit is designed as an extension (not an add-on). Although not recommended, i
 2. Search `FlexKit`
 3. `Arrow at top right of FlexKit sub-panel` -> `Uninstall`
 <br><br>
-<a href="/images/install1.jpg" target="_blank">
-<img src="/images/install1.jpg" style="width: 256px;" />
+<a href="images/install1.jpg" target="_blank">
+<img src="images/install1.jpg" style="width: 256px;" />
 </a>
-<a href="/images/uninstall1.jpg" target="_blank">
-<img src="/images/uninstall1.jpg" style="width: 256px;" />
+<a href="images/uninstall1.jpg" target="_blank">
+<img src="images/uninstall1.jpg" style="width: 256px;" />
 </a>
 
 #### Updating FlexKit
@@ -99,10 +99,10 @@ FlexKit is designed as an extension (not an add-on). Although not recommended, i
 
 
 #### Using FlexKit
-- For common use-case scenarios, navigate to [**Quick-Start**](/quick-start/)
-- For details on button layout and what each button does, navigate to `Extra` -> [**Panel Guide**](/panel-guide/)
-- For more understanding of the terminology and what's going on under-the-hood, navigate to `Extra` -> [**Terminology and Technical Details**](/terminology/)
-- Although FlexKit has a built-in troubleshooting feature, if you are still running into difficulties you can navigate to `Extra` -> [**Troubleshooting**](/troubleshooting/) or [**contact me**](/#contact)
+- For common use-case scenarios, navigate to [**Quick-Start**](quick-start.md)
+- For details on button layout and what each button does, navigate to `Extra` -> [**Panel Guide**](panel-guide.md)
+- For more understanding of the terminology and what's going on under-the-hood, navigate to `Extra` -> [**Terminology and Technical Details**](terminology.md)
+- Although FlexKit has a built-in troubleshooting feature, if you are still running into difficulties you can navigate to `Extra` -> [**Troubleshooting**](troubleshooting.md) or [**contact me**](#contact)
 
 <br>
 
@@ -132,7 +132,7 @@ FlexKit is designed as an extension (not an add-on). Although not recommended, i
 - Easily tackle the usual suspects of weird and wacky behaviour: subtle breathing, fine movements, exact timing, and seamless loops. Whatever skeletal or shape-key based animations you can create in Blender, is exactly what you can expect to see in IMVU. 
 
 **Note**
-- FlexKit is also under continuous development: optimizations for smoother operation, quality of life implementations to save clicks, and new features entirely. See the [**Road-Map**](/road-map/) and [**Patch Notes**](/patch-notes/) for more details.
+- FlexKit is also under continuous development: optimizations for smoother operation, quality of life implementations to save clicks, and new features entirely. See the [**Road-Map**](road-map.md) and [**Patch Notes**](patch-notes.md) for more details.
 
 <br>
 
