@@ -1,0 +1,25 @@
+site_name: FlexKit Docs
+nav:
+  - Home: index.md
+  - Quick Start: quick-start.md
+  - Extra: 
+    - Panel Guide: panel-guide.md
+    - Terminology and Technical Details: terminology.md
+    - Troubleshooting: troubleshooting.md
+    - External Links: external-links.md
+  - Development:
+    - Patch Notes: patch-notes.md
+    - Road Map: road-map.md
+theme: ivory
+extra_css:
+  - stylesheets/extra.css
+plugins:
+  mike:
+    # These fields are all optional; the defaults are as below...
+    alias_type: symlink
+    redirect_template: null
+    deploy_prefix: 'online'
+    canonical_version: latest
+    version_selector: true
+    css_dir: css
+    javascript_dir: js
