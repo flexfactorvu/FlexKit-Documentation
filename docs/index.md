@@ -5,9 +5,13 @@
 
 
 
-### Join
-<iframe src="https://discord.com/widget?id=1467790361609895948&theme=dark" width="512" height="256" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
-
+### Discord
+<iframe
+  src="https://discord.com/widget?id=1467790361609895948&theme=dark"
+  style="display:block; margin:0 auto; width:100%; height:300px; border:0;"
+  allowtransparency="true"
+  sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts">
+</iframe>
 <br>
 <br>
 

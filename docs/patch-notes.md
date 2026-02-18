@@ -7,6 +7,19 @@ Catch up on updates.
 
 <br>
 
+## `3.0.1`
+
+Feb 18 - 2026
+
++ Latest Version
++ Hotfix Update
+    - fixed morph export bug
+    - fixed update link
+
+<br>
+
+- - -
+
 ## `3.0.0`
 
 + Release version

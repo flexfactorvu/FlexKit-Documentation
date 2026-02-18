@@ -14,23 +14,20 @@ Reference for what each button does.
 <table style="margin-left: 0; margin-right: auto;">
     <tr>
         <td>
-            </a>
             <a href="../images/overview-1.jpg" target="_blank">
-            <img src="../images/overview-1.jpg" style="width: 256px;" />
+            <img src="../images/overview-1.jpg" style="width: 128px;" />
             </a><br>
         </td>
         <td></td>
         <td>
-            </a>
             <a href="../images/config-panel.jpg" target="_blank">
-            <img src="../images/config-panel.jpg" style="width: 256px;" />
+            <img src="../images/config-panel.jpg" style="width: 128px;" />
             </a>
         </td>
         <td></td>
         <td>
-            </a>
             <a href="../images/details-panel.jpg" target="_blank">
-            <img src="../images/details-panel.jpg" style="width: 256px;" />
+            <img src="../images/details-panel.jpg" style="width: 128px;" />
             </a>
         </td>
     </tr>
@@ -50,23 +47,20 @@ Reference for what each button does.
     </tr>
     <tr>
         <td>
-            </a>
             <a href="../images/export-panel.jpg" target="_blank">
-            <img src="../images/export-panel.jpg" style="width: 256px;" />
+            <img src="../images/export-panel.jpg" style="width: 128px;" />
             </a><br>
         </td>
         <td></td>
         <td>
-            </a>
             <a href="../images/export-options-panel.jpg" target="_blank">
-            <img src="../images/export-options-panel.jpg" style="width: 256px;" />
+            <img src="../images/export-options-panel.jpg" style="width: 128px;" />
             </a>
         </td>
         <td></td>
         <td>
-            </a>
             <a href="../images/support-panel.jpg" target="_blank">
-            <img src="../images/support-panel.jpg" style="width: 256px;" />
+            <img src="../images/support-panel.jpg" style="width: 128px;" />
             </a>
         </td>
     </tr>
@@ -75,7 +69,7 @@ Reference for what each button does.
         <td></td>
         <td><a href="/panel-guide/#33-export-options"><b>Export Options<br>Section</b></a></td>
         <td></td>
-        <td><a href="/panel-guide/#51-support"><b>Export Options<br>Section</b></a></td>
+        <td><a href="/panel-guide/#51-support"><b>Support<br>Section</b></a></td>
     </tr>
 </table>
 
@@ -85,14 +79,12 @@ Reference for what each button does.
 <table style="margin-left: 0; margin-right: auto;">
     <tr>
         <td>
-            </a>
             <a href="../images/error-info-panel.jpg" target="_blank">
             <img src="../images/error-info-panel.jpg" style="width: 256px;" />
             </a><br>
         </td>
         <td></td>
         <td>
-            </a>
             <a href="../images/set-up-config-panel.jpg" target="_blank">
             <img src="../images/set-up-config-panel.jpg" style="width: 256px;" />
             </a>
@@ -110,14 +102,12 @@ Reference for what each button does.
     </tr>
     <tr>
         <td>
-            </a>
             <a href="../images/filter-subsamples-panel.jpg" target="_blank">
             <img src="../images/filter-subsamples-panel.jpg" style="width: 256px;" />
             </a><br>
         </td>
         <td></td>
         <td>
-            </a>
             <a href="../images/resolution-settings-panel.jpg" target="_blank">
             <img src="../images/resolution-settings-panel.jpg" style="width: 256px;" />
             </a>
@@ -140,18 +130,14 @@ Reference for what each button does.
 
 ## `1` - Configuration
 - - -
-</a>
 <a href="../images/overview-2.jpg" target="_blank">
 <img src="../images/overview-2.jpg" style="width: 300px;" />
-</a>
 </a>
 <a href="../images/config-panel.jpg" target="_blank">
 <img src="../images/config-panel.jpg" style="width: 300px;" />
 </a>
-</a>
 <a href="../images/error-info-panel.jpg" target="_blank">
 <img src="../images/error-info-panel.jpg" style="width: 300px;" />
-</a>
 </a>
 <a href="../images/set-up-config-panel.jpg" target="_blank">
 <img src="../images/set-up-config-panel.jpg" style="width: 300px;" />
@@ -199,10 +185,8 @@ Reference for what each button does.
 <a href="../images/overview-3.jpg" target="_blank">
 <img src="../images/overview-3.jpg" style="width: 300px;" />
 </a>
-</a>
 <a href="../images/details-panel.jpg" target="_blank">
 <img src="../images/details-panel.jpg" style="width: 300px;" />
-</a>
 </a>
 <a href="../images/filter-subsamples-panel.jpg" target="_blank">
 <img src="../images/filter-subsamples-panel.jpg" style="width: 300px;" />
@@ -229,7 +213,6 @@ Reference for what each button does.
 <br>
 
 - - -
-</a>
 <a href="../images/overview-4.jpg" target="_blank">
 <img src="../images/overview-4.jpg" style="width: 300px;" />
 </a>
@@ -257,10 +240,8 @@ Samples at the current frame only, omitting temporal comparisons and reporting t
 <a href="../images/overview-5.jpg" target="_blank">
 <img src="../images/overview-5.jpg" style="width: 300px;" />
 </a>
-</a>
 <a href="../images/export-options-panel.jpg" target="_blank">
 <img src="../images/export-options-panel.jpg" style="width: 300px;" />
-</a>
 </a>
 <a href="../images/resolution-settings-panel.jpg" target="_blank">
 <img src="../images/resolution-settings-panel.jpg" style="width: 300px;" />
@@ -297,10 +278,8 @@ Samples at the current frame only, omitting temporal comparisons and reporting t
 
 ## `51` - Support
 - - -
-</a>
 <a href="../images/overview-6.jpg" target="_blank">
 <img src="../images/overview-6.jpg" style="width: 300px;" />
-</a>
 </a>
 <a href="../images/support-panel.jpg" target="_blank">
 <img src="../images/support-panel.jpg" style="width: 300px;" />
