@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../img/favicon.ico">
+    <title>Quick Start &mdash; FlexKit Docs</title>
+    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Lato:400,700">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/tonsky/FiraCode@1.206/distr/fira_code.css">
+    <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.8.1/css/all.css">
+    <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.8.1/css/v4-shims.css">
+    <link rel="stylesheet" href="../css/theme.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+    <link rel="stylesheet" href="../stylesheets/extra.css">
+    <script src="//code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+    <script>
+        hljs.initHighlightingOnLoad();
+    </script> 
+</head>
+
+<body ontouchstart="">
+    <div id="container">
+        <aside>
+            <div class="home">
+                <div class="title">
+                    <button class="hamburger"></button>
+                    <a href=".." class="site-name"> FlexKit Docs</a>
+                </div>
+            </div>
+            <nav class="nav">
+                <ul class="root">
+                    <li class="toctree-l1"><a class="nav-item" href="..">Home</a></li>
+                    <li class="toctree-l1 current"><a class="nav-item current" href="./">Quick Start</a>
+<ul class="subnav">
+<li class="toctree-l2"><a class="nav-item toc" href="#useful-links">Useful Links</a></li>
+<li class="toctree-l2"><a class="nav-item toc" href="#static-avatar-pose-quick-export">Static Avatar Pose (Quick Export)</a></li>
+<li class="toctree-l2"><a class="nav-item toc" href="#animated-avatar-export">Animated Avatar (Export)</a></li>
+<li class="toctree-l2"><a class="nav-item toc" href="#imvu-accessories-custom-armature">IMVU Accessories (Custom Armature)</a></li>
+<li class="toctree-l2"><a class="nav-item toc" href="#importing-into-imvu">Importing Into IMVU</a></li>
+</ul></li>
+                    <li class="toctree-l1"><button class="section nav-item">Extra</button>
+<ul class="subnav">
+    <li class="toctree-l2"><a class="nav-item" href="../panel-guide/">Panel Guide</a></li>
+    <li class="toctree-l2"><a class="nav-item" href="../terminology/">Terminology and Technical Details</a></li>
+    <li class="toctree-l2"><a class="nav-item" href="../troubleshooting/">Troubleshooting</a></li>
+    <li class="toctree-l2"><a class="nav-item" href="../external-links/">External Links</a></li>
+</ul></li>
+                    <li class="toctree-l1"><button class="section nav-item">Development</button>
+<ul class="subnav">
+    <li class="toctree-l2"><a class="nav-item" href="../patch-notes/">Patch Notes</a></li>
+    <li class="toctree-l2"><a class="nav-item" href="../road-map/">Road Map</a></li>
+</ul></li>
+                </ul>
+            </nav>
+            <div class="repo">
+    <div class="previous"><a href="..">&laquo; Previous</a></div>
+    <div class="next"><a href="../panel-guide/">Next &raquo;</a></div>
+</div>
+        </aside>
+        <div id="spacer"><button class="arrow"></button></div>
+        <main>
+            <div class="home-top">
+                <button class="hamburger"></button>
+                <a href=".." class="site-name"> FlexKit Docs</a>
+            </div>
+            <div id="main">
+                <nav class="breadcrumbs">
+<ul>
+    
+</ul>
+</nav>
+                <div id="content"><hr />
+<h1 id="important"><strong>IMPORTANT</strong></h1>
+<p><strong>FlexKit will only be fully functional within saved Blender files. Please ensure your Blender project is SAVED before any use!</strong></p>
+<hr />
+<p><br>
+<br></p>
+<h2 id="useful-links">Useful Links</h2>
+<ul>
+<li><a href="../#installation-and-use"><strong>Install/Uninstall/Update</strong></a></li>
+<li><a href="../panel-guide/"><strong>Panel Guide</strong></a></li>
+<li><a href="../terminology/"><strong>Terminology and Technical Details</strong></a></li>
+<li><a href="../patch-notes/"><strong>Patch Notes</strong></a></li>
+<li><a href="../troubleshooting/">Troubleshooting</a></li>
+<li><a href="../external-links/">Extra Resources</a></li>
+<li><a href="../#navigation">Site Navigation</a></li>
+</ul>
+<p><br>
+<br></p>
+<hr />
+<h2 id="static-avatar-pose-quick-export">Static Avatar Pose (Quick Export)</h2>
+<hr />
+<table style="margin-left: 0; margin-right: auto;">
+    <tr>
+        <td>
+            </a>
+            <a href="../images/auto-detect.jpg" target="_blank">
+            <img src="../images/auto-detect.jpg" style="width: 128px;" />
+            </a>
+        </td>
+        <td></td>
+        <td>
+            </a>
+            <a href="../images/quickexportanim.jpg" target="_blank">
+            <img src="../images/quickexportanim.jpg" style="width: 128px;" />
+            </a>
+        </td>
+        <td></td>
+        <td>
+            </a>
+            <a href="../images/quickexportmorph.jpg" target="_blank">
+            <img src="../images/quickexportmorph.jpg" style="width: 128px;" />
+            </a>
+        </td>
+    </tr>
+    <tr>
+        <td><br>Configure for export<br>See Step 2<br><br></td>
+        <td></td>
+        <td>Export animation<br><b>(armature)</b><br>See Step 3</td>
+        <td></td>
+        <td>Export animation<br><b>(morph)</b><br>See Step 3</td>
+    </tr>
+</table>
+
+<h4 id="prerequisite">Prerequisite</h4>
+<ul>
+<li><code>IMVU STUDIO TOOLKIT</code> -&gt; <code>Animation Tool</code> -&gt; <code>APPEND ANIMATION FILE</code></li>
+<li><strong>SAVED</strong> Blender Project</li>
+</ul>
+<h4 id="instructions">Instructions</h4>
+<ol>
+<li>
+<p>Create your avatar pose in <code>Pose-Mode</code> as you would normally.</p>
+</li>
+<li>
+<p><code>FlexKit</code> -&gt; <code>Configuration</code> -&gt; <code>Click "Auto-Detect IMVU Template"</code></p>
+</li>
+<li>
+<p><strong>EXPORTING</strong></p>
+<ul>
+<li>TO EXPORT ARMATURE POSE:<ul>
+<li><code>FlexKit</code> -&gt; <code>Configuration</code> -&gt; <code>Click "Anim" in the list</code></li>
+<li><code>FlexKit</code> -&gt; <code>"Quick-Export Current Pose"</code></li>
+</ul>
+</li>
+<li>TO EXPORT FACIAL MORPHS:<ul>
+<li><code>FlexKit</code> -&gt; <code>Configuration</code> -&gt; <code>Click "Morph" in the list</code></li>
+<li><code>FlexKit</code> -&gt; <code>"Quick-Export Current Pose"</code>
+<br></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>Search in the current .blend project folder for the associated Animfxxx.xaf/Morphfxxx.xpf file(s)</p>
+<ul>
+<li>The xxx denotes a number corresponding to your current frame in Blender, likely 001. so look for Animf001.xaf and Morphf001.xpf respectively.</li>
+</ul>
+</li>
+</ol>
+<p><br></p>
+<h4 id="common-errors-and-warnings">Common Errors and Warnings</h4>
+<ul>
+<li>Error: <strong>CFEx00</strong>: <code>Missing Configuration</code></li>
+<li>Error: <strong>SVEx00</strong>: <code>File Not Saved</code></li>
+<li>Warning: <code>NO IMVU TEMPLATE CONFIGURATIONS FOUND</code></li>
+<li>Warning: <code>File Failed Export</code></li>
+<li><a href="../troubleshooting/#common-application-errors"><strong>Troubleshoot</strong></a> for possible resolutions.</li>
+</ul>
+<p><br>
+<br></p>
+<hr />
+<h2 id="animated-avatar-export">Animated Avatar (Export)</h2>
+<hr />
+<table style="margin-left: 0; margin-right: auto;">
+    <tr>
+        <td>
+            </a>
+            <a href="../images/framesettings.jpg" target="_blank">
+            <img src="../images/framesettings.jpg" style="width: 128px;" />
+            </a>
+        </td>
+        <td></td>
+        <td>
+            </a>
+            <a href="../images/auto-detect.jpg" target="_blank">
+            <img src="../images/auto-detect.jpg" style="width: 128px;" />
+            </a>
+        </td>
+        <td></td>
+        <td>
+            </a>
+            <a href="../images/exportanim.jpg" target="_blank">
+            <img src="../images/exportanim.jpg" style="width: 128px;" />
+            </a>
+        </td>
+        <td></td>
+        <td>
+            </a>
+            <a href="../images/exportmorph.jpg" target="_blank">
+            <img src="../images/exportmorph.jpg" style="width: 128px;" />
+            </a>
+        </td>
+    </tr>
+    <tr>
+        <td><br>Check time setting<br>(FPS, frame range)<br>See Prerequisite<br><br></td>
+        <td></td>
+        <td><br>Configure for export<br>See Step 2<br><br></td>
+        <td></td>
+        <td>Export animation<br><b>(armature)</b><br>See Step 3</td>
+        <td></td>
+        <td>Export animation<br><b>(morph)</b><br>See Step 3</td>
+    </tr>
+</table>
+
+<h4 id="prerequisite_1">Prerequisite</h4>
+<ul>
+<li><code>IMVU STUDIO TOOLKIT</code> -&gt; <code>Animation Tool</code> -&gt; <code>APPEND ANIMATION FILE</code></li>
+<li>
+<p><strong>SAVED</strong> Blender Project</p>
+</li>
+<li>
+<p><strong>FOR BEST RESULTS</strong>:</p>
+<ul>
+<li>Double check FPS is set to 30 in <code>Blender Properties Panel -&gt; Output -&gt; Frame Rate</code></li>
+<li>Ensure <code>Frame Range</code> starts and ends exactly where you want the animation to start and end
+<br></li>
+</ul>
+</li>
+</ul>
+<h4 id="instructions_1">Instructions</h4>
+<ol>
+<li>Create your avatar animation in <code>Pose-Mode</code> as you would normally. </li>
+<li>
+<p><code>FlexKit</code> -&gt; <code>Configuration</code> -&gt; <code>Click "Auto-Detect IMVU Template"</code></p>
+</li>
+<li>
+<p><strong>EXPORTING</strong></p>
+<ul>
+<li>TO EXPORT ARMATURE ANIMATION SEQUENCE:<ul>
+<li><code>FlexKit</code> -&gt; <code>Configuration</code> -&gt; <code>Click "Anim" in the list</code></li>
+<li><code>FlexKit</code> -&gt; <code>"Export"</code></li>
+</ul>
+</li>
+<li>TO EXPORT FACIAL MORPH ANIMATION SEQUENCE:<ul>
+<li><code>FlexKit</code> -&gt; <code>Configuration</code> -&gt; <code>Click "Morph" in the list</code></li>
+<li><code>FlexKit</code> -&gt; <code>"Export"</code></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>Search in the current .blend project folder for the associated Anim.xaf/Morph.xpf file(s)</p>
+</li>
+</ol>
+<p><br></p>
+<h4 id="common-errors-and-warnings_1">Common Errors and Warnings</h4>
+<ul>
+<li>Error: <strong>CFEx00</strong>: <code>Missing Configuration</code></li>
+<li>Error: <strong>SVEx00</strong>: <code>File Not Saved</code></li>
+<li>Warning: <code>NO IMVU TEMPLATE CONFIGURATIONS FOUND</code></li>
+<li>Warning: <code>File Failed Export</code></li>
+<li><a href="../troubleshooting/#common-application-errors"><strong>Troubleshoot</strong></a> for possible resolutions.</li>
+</ul>
+<p><br>
+<br></p>
+<hr />
+<h2 id="imvu-accessories-custom-armature">IMVU Accessories (Custom Armature)</h2>
+<hr />
+<table style="margin-left: 0; margin-right: auto;">
+    <tr>
+        <td>
+            </a>
+            <a href="../images/add-config.jpg" target="_blank">
+            <img src="../images/add-config.jpg" style="width: 128px;" />
+            </a>
+        </td>
+        <td></td>
+        <td>
+            </a>
+            <a href="../images/add-config2.jpg" target="_blank">
+            <img src="../images/add-config2.jpg" style="width: 256px;" />
+            </a>
+        </td>
+        <td></td>
+        <td>
+            </a>
+            <a href="../images/enableaccessory.jpg" target="_blank">
+            <img src="../images/enableaccessory.jpg" style="width: 128px;" />
+            </a>
+        </td>
+        <td></td>
+        <td>
+            </a>
+            <a href="../images/accessory-export1.jpg" target="_blank">
+            <img src="../images/accessory-export1.jpg" style="width: 128px;" />
+            </a>
+        </td>
+    </tr>
+    <tr>
+        <td><br>Add new target<br>See Step 2<br><br></td>
+        <td></td>
+        <td>Select target<br>See Step 3</td>
+        <td></td>
+        <td>Enable<br><b>Accessory Export</b><br>See Step 4</td>
+        <td></td>
+        <td>Export<br>Full/Quick<br>See Step 4</td>
+    </tr>
+</table>
+
+<h4 id="prerequisite_2">Prerequisite</h4>
+<ul>
+<li>
+<p><code>IMVU STUDIO TOOLKIT</code> -&gt; <code>Attachment Tool</code> -&gt; <code>APPEND ATTACHMENT FILE</code> (optional)</p>
+</li>
+<li>
+<p><strong>It is highly recommended to have your custom-made armature adhere to the following guidelines</strong>:</p>
+<ul>
+<li>One single root bone (no parents)</li>
+<li>Root bone is named AttachmentRoot (the IMVU STUDIO TOOLKIT names this automatically)</li>
+<li>It is recommended to build your skeleton from the IMVU STUDIO TOOLKIT templated armature</li>
+</ul>
+</li>
+<li>
+<p><strong>SAVED</strong> Blender Project</p>
+</li>
+<li>
+<p><strong>FOR BEST RESULTS in ANIMATIONS (non-static poses)</strong>:</p>
+<ul>
+<li>Double check FPS is set to 30 in: <code>Blender Properties Panel</code> -&gt; <code>Output</code> -&gt; <code>Frame Rate</code></li>
+<li>Ensure <code>Frame Range</code> starts and ends exactly where you want the animation to start and end</li>
+<li>(same as <a href="#animated-avatar-export"><strong>animated avatar</strong></a> prerequisite)</li>
+</ul>
+</li>
+</ul>
+<p><br></p>
+<h4 id="instructions_2">Instructions</h4>
+<ol>
+<li>Create your accessory animation/pose in <code>Pose-Mode</code> as you would normally. </li>
+<li><code>FlexKit</code> -&gt; <code>Configuration</code> -&gt; <code>Click "+"</code></li>
+<li><code>Select Target Object</code> -&gt; Find your accessory ARMATURE (commonly named "Attachment.RIG" if built from IMVU STUDIO TOOLKIT template) -&gt; Click <code>OK</code><ul>
+<li><strong>IF YOUR ACCESSORY MESH HAS ANIMATED SHAPE-KEYS</strong>:<ul>
+<li><code>FlexKit</code> -&gt; <code>Configuration</code> -&gt; <code>Click "+"</code></li>
+<li><code>Select Target Object</code> -&gt; Find your accessory MESH -&gt; Click <code>OK</code></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><strong>EXPORTING</strong><ul>
+<li><code>Export Options</code> -&gt; <code>Accessory Export</code> -&gt; <strong>ENABLE</strong></li>
+<li>TO EXPORT ARMATURE ANIMATION SEQUENCE:<ul>
+<li><code>FlexKit</code> -&gt; <code>Configuration</code> -&gt; <code>Click ARMATURE object name in the list</code></li>
+</ul>
+</li>
+<li>TO EXPORT SHAPE-KEY ANIMATION SEQUENCE:<ul>
+<li><code>FlexKit</code> -&gt; <code>Configuration</code> -&gt; <code>Click MESH object name in the list</code></li>
+</ul>
+</li>
+<li><code>FlexKit</code> -&gt; <code>"Export"</code> or <code>"Quick-Export Current Pose" (for single pose)</code></li>
+</ul>
+</li>
+<li>Search in the current project folder for the associated XAF/XPF file(s)</li>
+</ol>
+<p><br></p>
+<h4 id="common-errors-and-warnings_2">Common Errors and Warnings</h4>
+<ul>
+<li>Error: <strong>CFEx00</strong>: <code>Missing Configuration</code></li>
+<li>Error: <strong>SVEx00</strong>: <code>File Not Saved</code></li>
+<li>Warning: <code>Mesh has no shapekeys</code></li>
+<li>Warning: <code>File Failed Export</code></li>
+<li><a href="../troubleshooting/#common-application-errors"><strong>Troubleshoot</strong></a> for possible resolutions.</li>
+</ul>
+<p><br>
+<br></p>
+<hr />
+<h2 id="importing-into-imvu">Importing Into IMVU</h2>
+<hr />
+<h3 id="prerequisite_3">Prerequisite</h3>
+<ul>
+<li>Import Mesh and/or Armature. Recommended to use FBX exported from IMVU STUDIO TOOLKIT for Blender. However uncheck or disregard any animations bundled with the package.</li>
+<li>For avatar-derived items or animation-only items (pose packs), you will not need FBX at all.</li>
+</ul>
+<p><br></p>
+<h3 id="instructions_3">Instructions</h3>
+<ul>
+<li>
+<h5 id="imvu-studio">IMVU Studio</h5>
+<p><table style="margin-left: 0; margin-right: auto;">
+    <tr>
+        <td>
+            </a>
+            <a href="../images/imvu-import.jpg" target="_blank">
+            <img src="../images/imvu-import.jpg" style="width: 128px;" />
+            </a>
+        </td>
+        <td></td>
+        <td>
+            </a>
+            <a href="../images/imvu-update.jpg" target="_blank">
+            <img src="../images/imvu-update.jpg" style="width: 128px;" />
+            </a>
+        </td>
+    </tr>
+    <tr>
+        <td><br>Importing xaf/xpf<br>See Step 1<br><br></td>
+        <td></td>
+        <td>Updating xaf/xpf<br>See Step 2</td>
+    </tr>
+</table></p>
+<ol>
+<li>In your project: <code>Import Icon</code> -&gt; <code>Import Asset</code> -&gt; Search for the XAF/XPF -&gt; <code>Open</code></li>
+<li>To reload/update the asset, either import it again or:<ul>
+<li><code>Assets</code> -&gt; Find Asset -&gt; <code>Options</code> -&gt; <code>Update Asset</code>.</li>
+</ul>
+</li>
+</ol>
+</li>
+<li>
+<h5 id="classic">Classic</h5>
+<p><table style="margin-left: 0; margin-right: auto;">
+    <tr>
+        <td>
+            </a>
+            <a href="../images/showprojectclassic.jpg" target="_blank">
+            <img src="../images/showprojectclassic.jpg" style="width: 256px;" />
+            </a><br>
+            </a>
+            <a href="../images/copyfileover.jpg" target="_blank">
+            <img src="../images/copyfileover.jpg" style="width: 256px;" />
+            </a>
+        </td>
+        <td></td>
+        <td>
+            </a>
+            <a href="../images/changedirectory.jpg" target="_blank">
+            <img src="../images/changedirectory.jpg" style="width: 128px;" />
+            </a>
+        </td>
+        <td></td>
+        <td>
+            </a>
+            <a href="../images/copyaddress.jpg" target="_blank">
+            <img src="../images/copyaddress.jpg" style="width: 256px;" />
+            </a>
+        </td>
+    </tr>
+    <tr>
+        <td><br>Step 1 (top)<br>Step 2 (bottom)<br><br></td>
+        <td></td>
+        <td>Change export<br>folder<br>See Step 3</td>
+        <td></td>
+        <td>Copy folder address<br>See Step 3</td>
+    </tr>
+</table></p>
+<ol>
+<li>Open the project folder</li>
+<li>Copy your XAF/XPF files into the project folder</li>
+<li>For seamless integration, copy the project folder path, and change the FlexKit output directory in <code>Export Options</code> to the project folder. This way, everytime you export your file, it will automatically update in IMVU (after clicking <code>Apply Changes</code>)</li>
+</ol>
+</li>
+</ul>
+<p><br>
+<br></p>
+<hr />
+<p><br><br><br></p></div>
+                <footer>
+    <div class="footer-buttons">
+        <div class="previous"><a href=".." title="Home"><span>Previous</span></a></div>
+        <div class="next"><a href="../panel-guide/" title="Panel Guide"><span>Next</span></a></div>
+    </div>
+    <div class="footer-note">
+        <p>
+            Built with <a href="http://www.mkdocs.org">MkDocs</a> using
+            <a href="https://github.com/daizutabi/mkdocs-ivory">Ivory theme</a>.
+        </p>
+    </div>
+</footer>
+            </div>
+        </main>
+    </div>
+    <script>var base_url = '..';</script>
+    <script src="../js/theme.js"></script>
+</body>
+
+</html>
