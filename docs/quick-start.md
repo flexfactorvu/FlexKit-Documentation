@@ -25,21 +25,18 @@
 <table style="margin-left: 0; margin-right: auto;">
     <tr>
         <td>
-            </a>
             <a href="../images/auto-detect.jpg" target="_blank">
             <img src="../images/auto-detect.jpg" style="width: 128px;" />
             </a>
         </td>
         <td></td>
         <td>
-            </a>
             <a href="../images/quickexportanim.jpg" target="_blank">
             <img src="../images/quickexportanim.jpg" style="width: 128px;" />
             </a>
         </td>
         <td></td>
         <td>
-            </a>
             <a href="../images/quickexportmorph.jpg" target="_blank">
             <img src="../images/quickexportmorph.jpg" style="width: 128px;" />
             </a>
@@ -96,28 +93,24 @@
 <table style="margin-left: 0; margin-right: auto;">
     <tr>
         <td>
-            </a>
             <a href="../images/framesettings.jpg" target="_blank">
             <img src="../images/framesettings.jpg" style="width: 128px;" />
             </a>
         </td>
         <td></td>
         <td>
-            </a>
             <a href="../images/auto-detect.jpg" target="_blank">
             <img src="../images/auto-detect.jpg" style="width: 128px;" />
             </a>
         </td>
         <td></td>
         <td>
-            </a>
             <a href="../images/exportanim.jpg" target="_blank">
             <img src="../images/exportanim.jpg" style="width: 128px;" />
             </a>
         </td>
         <td></td>
         <td>
-            </a>
             <a href="../images/exportmorph.jpg" target="_blank">
             <img src="../images/exportmorph.jpg" style="width: 128px;" />
             </a>
@@ -178,28 +171,24 @@
 <table style="margin-left: 0; margin-right: auto;">
     <tr>
         <td>
-            </a>
             <a href="../images/add-config.jpg" target="_blank">
             <img src="../images/add-config.jpg" style="width: 128px;" />
             </a>
         </td>
         <td></td>
         <td>
-            </a>
             <a href="../images/add-config2.jpg" target="_blank">
             <img src="../images/add-config2.jpg" style="width: 256px;" />
             </a>
         </td>
         <td></td>
         <td>
-            </a>
             <a href="../images/enableaccessory.jpg" target="_blank">
             <img src="../images/enableaccessory.jpg" style="width: 128px;" />
             </a>
         </td>
         <td></td>
         <td>
-            </a>
             <a href="../images/accessory-export1.jpg" target="_blank">
             <img src="../images/accessory-export1.jpg" style="width: 128px;" />
             </a>
@@ -279,14 +268,12 @@
     <table style="margin-left: 0; margin-right: auto;">
         <tr>
             <td>
-                </a>
                 <a href="../images/imvu-import.jpg" target="_blank">
                 <img src="../images/imvu-import.jpg" style="width: 128px;" />
                 </a>
             </td>
             <td></td>
             <td>
-                </a>
                 <a href="../images/imvu-update.jpg" target="_blank">
                 <img src="../images/imvu-update.jpg" style="width: 128px;" />
                 </a>
@@ -308,25 +295,21 @@
     <table style="margin-left: 0; margin-right: auto;">
         <tr>
             <td>
-                </a>
                 <a href="../images/showprojectclassic.jpg" target="_blank">
                 <img src="../images/showprojectclassic.jpg" style="width: 256px;" />
                 </a><br>
-                </a>
                 <a href="../images/copyfileover.jpg" target="_blank">
                 <img src="../images/copyfileover.jpg" style="width: 256px;" />
                 </a>
             </td>
             <td></td>
             <td>
-                </a>
                 <a href="../images/changedirectory.jpg" target="_blank">
                 <img src="../images/changedirectory.jpg" style="width: 128px;" />
                 </a>
             </td>
             <td></td>
             <td>
-                </a>
                 <a href="../images/copyaddress.jpg" target="_blank">
                 <img src="../images/copyaddress.jpg" style="width: 256px;" />
                 </a>
