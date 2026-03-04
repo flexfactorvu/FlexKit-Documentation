@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../img/favicon.ico">
+    <title>Road Map &mdash; FlexKit Docs</title>
+    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Lato:400,700">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/tonsky/FiraCode@1.206/distr/fira_code.css">
+    <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.8.1/css/all.css">
+    <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.8.1/css/v4-shims.css">
+    <link rel="stylesheet" href="../css/theme.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+    <link rel="stylesheet" href="../stylesheets/extra.css">
+    <script src="//code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+    <script>
+        hljs.initHighlightingOnLoad();
+    </script> 
+</head>
+
+<body ontouchstart="">
+    <div id="container">
+        <aside>
+            <div class="home">
+                <div class="title">
+                    <button class="hamburger"></button>
+                    <a href=".." class="site-name"> FlexKit Docs</a>
+                </div>
+            </div>
+            <nav class="nav">
+                <ul class="root">
+                    <li class="toctree-l1"><a class="nav-item" href="..">Home</a></li>
+                    <li class="toctree-l1"><a class="nav-item" href="../quick-start/">Quick Start</a></li>
+                    <li class="toctree-l1"><button class="section nav-item">Extra</button>
+<ul class="subnav">
+    <li class="toctree-l2"><a class="nav-item" href="../panel-guide/">Panel Guide</a></li>
+    <li class="toctree-l2"><a class="nav-item" href="../terminology/">Terminology and Technical Details</a></li>
+    <li class="toctree-l2"><a class="nav-item" href="../troubleshooting/">Troubleshooting</a></li>
+    <li class="toctree-l2"><a class="nav-item" href="../external-links/">External Links</a></li>
+</ul></li>
+                    <li class="toctree-l1"><button class="section nav-item">Development</button>
+<ul class="subnav">
+    <li class="toctree-l2"><a class="nav-item" href="../patch-notes/">Patch Notes</a></li>
+    <li class="toctree-l2 current"><a class="nav-item current" href="./">Road Map</a>
+<ul class="subnav">
+<li class="toctree-l3"><a class="nav-item toc" href="#disclaimer">Disclaimer</a></li>
+<li class="toctree-l3"><a class="nav-item toc" href="#current-version-300">Current Version : 3.0.0</a></li>
+<li class="toctree-l3"><a class="nav-item toc" href="#310">3.1.0</a></li>
+<li class="toctree-l3"><a class="nav-item toc" href="#320">3.2.0</a></li>
+<li class="toctree-l3"><a class="nav-item toc" href="#330">3.3.0</a></li>
+<li class="toctree-l3"><a class="nav-item toc" href="#planned-features-tentative">Planned Features (Tentative)</a></li>
+<li class="toctree-l3"><a class="nav-item toc" href="#goal-500">GOAL: 5.0.0</a></li>
+<li class="toctree-l3"><a class="nav-item toc" href="#final-notes">Final Notes</a></li>
+</ul></li>
+</ul></li>
+                </ul>
+            </nav>
+            <div class="repo">
+    <div class="previous"><a href="../patch-notes/">&laquo; Previous</a></div>
+</div>
+        </aside>
+        <div id="spacer"><button class="arrow"></button></div>
+        <main>
+            <div class="home-top">
+                <button class="hamburger"></button>
+                <a href=".." class="site-name"> FlexKit Docs</a>
+            </div>
+            <div id="main">
+                <nav class="breadcrumbs">
+<ul>
+    <li>Development</li>
+</ul>
+</nav>
+                <div id="content"><h1 id="road-map">Road-Map</h1>
+<p>Future plans for the development of FlexKit.</p>
+<hr />
+<p><br></p>
+<h3 id="disclaimer">Disclaimer</h3>
+<p>The following road-map is by no means legally binding. I can't tell the future. Blender may change, IMVU may change, or circumstances in my life may arise. I am a solo developer and as such, my operation is sensitive to personal issues and my productivity output cannot absorb the burdens that may come with personal crisis. There is no buffer. I pledge to be honest, transparent, and ethical in all my endeavors and development on FlexKit.</p>
+<hr />
+<p><br>
+<br></p>
+<h2 id="current-version-300">Current Version : <code>3.0.0</code></h2>
+<pre><code>+ Release Version!
+</code></pre>
+<p>Versions <code>3.0.X</code> reserved for emergency hotfixes if necessary</p>
+<p><br>
+<br></p>
+<hr />
+<p><br></p>
+<h3 id="next-planned-versions">Next Planned Versions:</h3>
+<p><br></p>
+<hr />
+<h2 id="310"><code>3.1.0</code></h2>
+<p><em>Expected Q2 2026</em></p>
+<ul>
+<li>
+<p>3.1.0 will focus primarily on back-end performance, and run-time efficiency tweaks.</p>
+</li>
+<li>
+<h5 id="why-this-hasnt-been-done-yet"><strong>Why this hasnt been done yet</strong></h5>
+<ul>
+<li>Majority of performance tweaking relies on suspending UI updates and making FlexKit run in the background for exports. This can cause interference with other plug-ins that have listeners for UI updates. Back-end tweaks have to be implemented very carefully and may only provide marginal benefits. However, it is absolutely worth putting effort into ensuring a solid foundation for adding functionality to FlexKit by attempting to give it more performance headroom early on its development lifecycle.  </li>
+</ul>
+</li>
+</ul>
+<p><br></p>
+<hr />
+<h2 id="320"><code>3.2.0</code></h2>
+<p><em>Expected Q4 2026</em></p>
+<ul>
+<li>Quality of life updates specifically aimed to better facilitate powerusers:</li>
+</ul>
+<h4 id="tentative">TENTATIVE</h4>
+<ul>
+<li>Intelligent automatic naming of exported files, selective between active animation data-block, target object name, or user-defined name</li>
+<li>
+<p>Tighter coupling of export options with individual configurations, i.e. making resolution settings per-configuration and not global</p>
+</li>
+<li>
+<h5 id="why-this-hasnt-been-done-yet_1"><strong>Why this hasnt been done yet</strong></h5>
+<ul>
+<li>The design decisions stated above are "opinionated" and lock users into a particular way of working. Constructive feedback from powerusers would make me feel more comfortable with settling on a design decision.</li>
+</ul>
+</li>
+</ul>
+<p><br></p>
+<hr />
+<h2 id="330"><code>3.3.0</code></h2>
+<p><em>Expected Q2 2027</em></p>
+<h5 id="new-major-feature-batch-exports">New major feature: Batch Exports</h5>
+<ul>
+<li>
+<p>simultaneous sampling and export of multiple configurations of target objects</p>
+</li>
+<li>
+<h5 id="why-this-hasnt-been-done-yet_2">Why this hasnt been done yet</h5>
+<ul>
+<li>Simultaneous sampling feature requires tight predictable performance from 3.1.0 as well as the quality of life features in 3.2.0 to be decided upon before implementation.</li>
+</ul>
+</li>
+</ul>
+<p><br></p>
+<hr />
+<p><br></p>
+<h2 id="planned-features-tentative">Planned Features (Tentative)</h2>
+<ol>
+<li><code>Queued Exports</code>: queue various batch-export jobs and render them all at once. This allows for varying frame range, frame rate, and other dependencies prior to executing renders</li>
+<li><code>XSF Exporter</code>: Export valid .XSF (Armature XML) files of configured armature objects</li>
+<li><code>Furniture Integration</code>: Auto-gen furniture node tree from animation template, animate furniture nodes, XSF Exporter support extended to this as well </li>
+<li><code>Keyframe-only, Quick-Frame based exporting</code>: sequentially export each keyframe or specified frames as individual quick-exports</li>
+<li><code>Reverse Parse</code>: Load XAF/XPF data back into blender (keep your expectations low on this one)</li>
+<li><code>Rig Augment</code>: Modularly add controling bones to the IMVU AVATAR Control_Armature to improve ease of use</li>
+</ol>
+<p><br></p>
+<hr />
+<h2 id="goal-500">GOAL: <code>5.0.0</code></h2>
+<ul>
+<li>Final COMPLETE version of the FlexKit. A result of the implemention of the some or all of the above features and plans.</li>
+<li><em>Estimated 5 Year development cycle: Completion in 2031</em></li>
+<li>
+<p><code>5.0.X</code> reserved for hot-fixes, and limited compatibility updates up until 2032. No new features added.</p>
+</li>
+<li>
+<h5 id="in-the-event-of-further-development"><strong>IN THE EVENT OF FURTHER DEVELOPMENT</strong></h5>
+<ul>
+<li>I cannot promise to honor free updates past this point. Blender LTS versions themselves have an advertised 5 year life-cycle, and to continuously provide compatibility updates I will likely begin charging a small ($5-$10) fee for users to upgrade compatibility to whatever the current version of Blender is at the time.</li>
+<li><code>5.X.0</code> will be reserved for such updated versions</li>
+</ul>
+</li>
+</ul>
+<p><br></p>
+<hr />
+<p><br>
+<br></p>
+<h2 id="final-notes"><strong>Final Notes</strong></h2>
+<p>In the hopes of solving a very real issue in IMVU, I have created a software that caters to outdated and obsolete Cal3D technology. At any given time if IMVU updates, it may render this software unnecessary or downright unusable. That is the risk I take as a developer by putting my time and effort into this and the risk you take as a purchaser.
+Some planned features seem quite substantial (eg. Reverse Parse, Rig Augment, and Furniture Armature Animation). Implementation of these features may trigger price increases in the FlexKit or gatekeeping of these features entirely between a standard and an upgraded (Pro) version. Early adopters will not have to pay for price increases, and/or will automatically be given the Pro version license if such an event occurs.
+<br><br><br></p></div>
+                <footer>
+    <div class="footer-buttons">
+        <div class="previous"><a href="../patch-notes/" title="Patch Notes"><span>Previous</span></a></div>
+    </div>
+    <div class="footer-note">
+        <p>
+            Built with <a href="http://www.mkdocs.org">MkDocs</a> using
+            <a href="https://github.com/daizutabi/mkdocs-ivory">Ivory theme</a>.
+        </p>
+    </div>
+</footer>
+            </div>
+        </main>
+    </div>
+    <script>var base_url = '..';</script>
+    <script src="../js/theme.js"></script>
+</body>
+
+</html>
