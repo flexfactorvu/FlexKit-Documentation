@@ -3,6 +3,22 @@ Catch up on updates.
 
     - **PLEASE NOTE** these are a snapshot at the time of version release. To get latest patch notes, ensure you are checking latest-version docs.
 
+
+- - -
+
+<br>
+
+## `3.0.2`
+
+March 03 - 2026
+
++ Hotfix Update
+    - FIXED : throwing an error if no active object in scene despite having valid configuration
+    - FIXED : "Auto-detect" Compatibility with IMVU studio toolkit 1.2.2 and 1.1.4 simultaneously
+
+<br>
+
+
 - - -
 
 <br>
@@ -11,7 +27,6 @@ Catch up on updates.
 
 Feb 18 - 2026
 
-+ Latest Version
 + Hotfix Update
     - fixed morph export bug
     - fixed update link
