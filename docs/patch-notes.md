@@ -8,6 +8,20 @@ Catch up on updates.
 
 <br>
 
+## `3.0.3`
+
+May 5 - 2026
+
++ Hotfix Update
+    - FIXED : Compatibility with IMVU studio toolkit 1.1.4 - 1.2.6 : KNOWN-BUG : need control arm enabled in scene (see [**limitations and known bugs**](troubleshooting.md#limitations-and-known-bugs))
+    - FIXED : exception handlers added to account for disabled objects in scene for export, including occurances of the previously mentioned known-bug.
+
+<br>
+
+- - -
+
+<br>
+
 ## `3.0.2`
 
 March 03 - 2026
