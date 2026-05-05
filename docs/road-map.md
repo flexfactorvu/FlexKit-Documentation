@@ -34,11 +34,11 @@ Versions `3.0.X` reserved for emergency hotfixes if necessary
 - - -
 
 ## `3.1.0` 
-*Expected Q2 2026*
+*Delivered May 5th 2026*
 
-+ 3.1.0 will focus primarily on back-end performance, and run-time efficiency tweaks.
++ 3.1.0 focused primarily on back-end performance, and run-time efficiency tweaks.
 
-+ ##### **Why this hasnt been done yet**
++ ##### **Why this wasn't done before**
     - Majority of performance tweaking relies on suspending UI updates and making FlexKit run in the background for exports. This can cause interference with other plug-ins that have listeners for UI updates. Back-end tweaks have to be implemented very carefully and may only provide marginal benefits. However, it is absolutely worth putting effort into ensuring a solid foundation for adding functionality to FlexKit by attempting to give it more performance headroom early on its development lifecycle.  
 
 <br>
