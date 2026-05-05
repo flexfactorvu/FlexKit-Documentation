@@ -14,9 +14,9 @@ The following road-map is by no means legally binding. I can't tell the future. 
 <br>
 <br>
 
-## Current Version : `3.0.0`
-    + Release Version!
-Versions `3.0.X` reserved for emergency hotfixes if necessary
+## Current Version : `3.1.0`
+    + First Version Update!
+Versions `3.1.X` reserved for emergency hotfixes if necessary
 
 <br>
 <br>
