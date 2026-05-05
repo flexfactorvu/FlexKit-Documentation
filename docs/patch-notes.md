@@ -8,13 +8,14 @@ Catch up on updates.
 
 <br>
 
-## `3.0.3`
+## `3.1.0`
 
 May 5 - 2026
 
-+ Hotfix Update
++ Version Update
     - FIXED : Compatibility with IMVU studio toolkit 1.1.4 - 1.2.6 : KNOWN-BUG : need control arm enabled in scene (see [**limitations and known bugs**](troubleshooting.md#limitations-and-known-bugs))
     - FIXED : exception handlers added to account for disabled objects in scene for export, including occurances of the previously mentioned known-bug.
+    - ADDED : optimized export algorithm, and more robust error handling for newer toolkits. Back-end and runtime performance tweaks consistent with [**Road Map**](road-map.md)
 
 <br>
 
